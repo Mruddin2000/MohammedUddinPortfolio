@@ -1,0 +1,80 @@
+.jobDesc{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 2rem;
+    }
+    .jobDesc > div{
+        background: var(--color-bg-variant);
+        padding: 0.4rem 10rem;
+        border-radius: 2rem;
+        border: 1px solid transparent;
+        transition: var(--transition);
+    
+    }
+    .jobDesc > div:hover{
+        background: transparent;
+        border-color: var(--color-primary-variant);
+        cursor: default;
+    
+    }
+    .jobDesc > div h3{
+         text-align: center;
+         margin-bottom: 2rem;
+         color: var(--color-primary);
+    
+    }
+    
+    .jobDesc_content{
+        display: table;
+        text-align: initial;
+}
+.experience_details{
+    display: flex;
+    gap: 1rem;
+
+}
+p{
+    padding-bottom: 15px;
+    font-size: 1.2rem;
+}
+.p1{
+margin-left: 15px;
+}
+
+.experience_details-icon{
+    margin-top: 6px;
+    color: var(--color-primary);
+}
+
+/* == Media Quearies for Mid-sized ==*/
+@media screen and (max-width: 1024px) {
+  .jobDesc{
+    grid-template-columns: 1fr;
+
+  }
+  .experience_container > div{
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+  .experience_content{
+    padding: 1rem;
+  }
+
+    }
+
+
+
+/* == Media Quearies for Small-sized ==*/
+@media screen and (max-width: 600px) {
+    .experience_container{
+        gap: 1rem;
+
+    }
+    .experience_container > div{
+        width: 100%;
+        padding: 2rem 1rem;
+    };
+
+
+}

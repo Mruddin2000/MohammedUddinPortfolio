@@ -1,0 +1,130 @@
+header {
+    height: 100vh;
+    padding-top: 2rem;
+    overflow: hidden;
+
+}
+.header_container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+.intro{
+
+}
+.intro h3{
+    
+}
+
+.logo{
+    margin-left: -15%;
+    width: 30%;
+    margin-top: -10%;
+}
+/* == CTA ==*/
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap:1.2rem;
+    justify-content: center;
+
+}
+/* == Socials ==*/
+.header_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom :10rem;
+
+}
+
+.header_socials::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background:var(--color-primary)
+}
+
+/* == Image ==*/
+.me img{
+    background: linear-gradient(var(--color-primary),transparent);
+    width: 25rem;
+    height: 20rem;
+    position:absolute;
+    left: calc(50% - 12rem);
+    margin-top: 4rem;
+    border-radius: 6rem 0rem 6rem 0rem;
+    overflow: hidden;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+/*==Scroll Down==*/
+
+.scroll_down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 15rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
+/* == Media Quearies for Mid-sized ==*/
+@media screen and (max-width: 1024px) {
+    header{
+height: 68vh;
+
+    }
+
+    .logo{
+        margin-left: -5%;
+        width: 30%;
+        margin-top: -16%;
+    }
+    .header_socials{
+        bottom: 15rem;
+    }
+    .scroll_down{
+        bottom: 20rem;
+    }
+
+}
+
+/* == Media Quearies for small-sized ==*/
+@media screen and (max-width: 600px) {
+    header{
+        height: 100vh;
+        
+            }
+            .header_socials,.scroll_down{
+                display: none;
+            }
+            .me img{
+                width: 22rem;
+                height: 24rem;
+                left: calc(50% - 11rem);
+
+
+            }
+
+            .logo{
+                margin-left: -5%;
+                width: 30%;
+                margin-top: -30%;
+            }
+
+            .intro{
+                display: inline-block;
+            }
+       .intro h3{
+        }
+        .intro h1{
+                font-size: 1.5rem;
+        }
+        
+}
